@@ -1,0 +1,121 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261113184354
+Nombre de usuario: MAXIMILIANO-NIZ\Lenovo
+Usuario RunAs: MAXIMILIANO-NIZ\Lenovo
+Nombre de la configuración: 
+Máquina: MAXIMILIANO-NIZ (Microsoft Windows NT 10.0.26300.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 10040
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Lenovo\Desktop\auditoria_completa.txt
+PS C:\WINDOWS\system32> cd $HOME\Desktop
+PS C:\Users\Lenovo\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\Lenovo\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/11/2026     18:45                Sistema_Ventas
+
+
+PS C:\Users\Lenovo\Desktop> cd Sistemas_Ventas
+cd : No se encuentra la ruta de acceso 'C:\Users\Lenovo\Desktop\Sistemas_Ventas' porque no existe.
+En línea: 1 Carácter: 1
++ cd Sistemas_Ventas
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Lenovo\Desktop\Sistemas_Ventas:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\Lenovo\Desktop\Sistemas_Ventas' porque no existe.
+En línea: 1 Carácter: 1
++ cd Sistemas_Ventas
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Lenovo\Desktop\Sistemas_Ventas:String) [Set-Location], ItemNot
+   FoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Lenovo\Desktop> cd Sistema_Venta
+cd : No se encuentra la ruta de acceso 'C:\Users\Lenovo\Desktop\Sistema_Venta' porque no existe.
+En línea: 1 Carácter: 1
++ cd Sistema_Venta
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Lenovo\Desktop\Sistema_Venta:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\Lenovo\Desktop\Sistema_Venta' porque no existe.
+En línea: 1 Carácter: 1
++ cd Sistema_Venta
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Lenovo\Desktop\Sistema_Venta:String) [Set-Location], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Lenovo\Desktop> cd Sistema_Ventas
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\Lenovo\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/11/2026     18:47                Frontend
+d-----        13/11/2026     18:47                Backend
+d-----        13/11/2026     18:47                BaseDatos
+
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git init
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git add
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git commit -m "Dia 1: Despliegue de la estructura base"
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git remote add origin https://github.com/Maximiliano-Niz/Sistema-Ventas.git
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git remote set-url origin https://github.com/Maximiliano-Niz/Sistema-Ventas.git
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL...." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL...."
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\Lenovo\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/11/2026     19:15                Pruebas_Unitarias
+
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git commit -m "Dia 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\Lenovo\Desktop\Sistema_Ventas> stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261113191825
+**********************
